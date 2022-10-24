@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Конференция стилей</title>
+	<link rel="stylesheet" type="text/css" href="../styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="primary-header container clearfix">
+		<h1 class="logo">
+			<a href="../index.html">Конференция<br>стилей</a>
+		</h1>
+		<h3 class="tagline">30&ndash;31 августа &mdash; Чикаго, штат Иллинойс</h3>
+		<nav class="nav primary-nav">
+			<ul>
+				<li><a href="../index.html">Главная</a></li><!--
+			 --><li><a href="speakers.html">Спикеры</a></li><!--
+			 --><li><a href="schedule.html">Расписание</a></li><!--
+			 --><li><a href="venue.html">Место проведения</a></li><!--
+			 --><li><a href="register.html">Регистрация</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="row-alt">
+		<div class="lead container">
+			<h1>Место проведения</h1>
+			<p>Конференция состоится в театре Чикаго, красивой исторической достопримечательности. Гостиница конференции расположена в нескольких минутах ходьбы вниз по Стейт-Стрит.</p>
+		</div>
+	</section>
+	<section class="row">
+		<div class="grid">
+			<section class="venue-theatre">
+				<div class="col-1-3">
+					<h2>Chicago Theatre</h2>
+					<p>175 N State St <br> Chicago, IL 60601</p>
+					<p><a href="http://www.thechicagotheatre.com/">thechicagotheatre.com</a> <br> (312) 462-6300</p>
+				</div><!--
+			 --><iframe class="venue-map col-2-3" src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x880e2ca55810a493%3A0x4700ddf60fcbfad6!2schicago+theatre!5e0!3m2!1sen!2sus!4v1388701393606"></iframe>
+			</section>
+			<section class="venue-hotel">
+				<div class="col-1-3">
+					<h2>Venue Hotel</h2>
+					<p>333 N Dearborn St <br> Chicago, IL 60654</p>
+					<p><a href="http://thehotelchicago.com/">thehotelchicago.com</a> <br> (312) 245-0333</p>
+				</div><!--
+			 --><iframe class="venue-map col-2-3" src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x880e2cb1da049173%3A0xa5c91d255a775f0b!2sHotel+Sax+Chicago%2C+North+Dearborn+Street%2C+Chicago%2C+IL!5e0!3m2!1sen!2sus!4v1388702493978"></iframe>
+			</section>
+		</div>
+	</section>
+	<footer class="primary-footer container clearfix">
+		<small>&copy; Конференция стилей</small>
+		<nav class="nav">
+			<ul>
+				<li><a href="../index.html">Главная</a></li><!--
+			 --><li><a href="speakers.html">Спикеры</a></li><!--
+			 --><li><a href="schedule.html">Расписание</a></li><!--
+			 --><li><a href="venue.html">Место проведения</a></li><!--
+			 --><li><a href="register.html">Регистрация</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</html>
+
+
+
+<!--
+
+
+семантический смысл элементов страниц основан на смысловом содержании элементов:
+
+<div>  - блочный контейнер, занимают всю доступную ширину страницы, начинаются с новой строки
+<span> - строчный контейнер, ширина основа на содержимом, не начинаются с новой строки
+
+синтаксис тега:
+<открывающий тег атрибут_1="значение" атрибут_2="значение">содержимое...</закрывающий тег>
+
+обязательно указывать в начале - <html lang="ru">
+
+текстовые элементы:
+
+заголовки:
+<h1></h1> -блочный, заголовок
+...
+<h6></h6>
+абзац:
+<p></p> -блочный, абзац
+жирный текст:
+<b></b> -строчный, стилистическое выделение
+<strong></strong> -строчный, важное значение
+курсивные текст:
+<em></em> -строчный, акцент на слове
+<i></i> -строчный, другой тон на слове
+
+структурные элементы:
+<header></header> -блочный, начало страницы, заголовок
+<nav></nav> -блочный, навигация
+<article></article> -блочный, заметка
+<section></section> -блочный, тематическая группа содержимого иногда содержит заголовки
+<aside></aside> -блочный, боковая панель
+<footer></footer> -блочный, конец страницы
+
+специальные символы:
+&код;
+
+гиперссылки:
+<a href=""></a> -строчный, исключение может оборазчивать блочные тэги в html5, ссылка
+
+
+<a></a> - открывающий и закрывающий тег
+
+атрибуты ссылок:
+src - источник встраиваемого элемента
+href - ссылка на связанный ресурс
+
+относительные и абсолютные пути:
+относительный путь- сокращенная запись, содержит только имя страницы, href="имя.html", ссылки на внтуренние страницы сайта
+абсолютный путь - полная запись, содержит полное имя: протокол:http:// и домен: ru,  
+href="http://название.ru", ссылки на внешние сайты
+
+ссылка на электронную почту:
+href="mailto:megamanfx@gmail.com"
+чтобы добавить тему письма:
+нужно добавить ?subject=тема
+href="mailto:megamanfx@gmail.com?subject=тема"
+чтобы добавить еще текст письма:
+нужно добавить &body=текст
+href="mailto:megamanfx@gmail.com?subject=тема&body=текст"
+пробел - %20 
+перенос строки - %0A
+
+открытие страницы в новом окне:
+<a href="" target="_blank">...</a>
+
+связывание частей одной страницы:
+<div id="top"></div>
+<a href="#top">на верх</a>
+
+
+-->

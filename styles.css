@@ -1,0 +1,1297 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+пользовательские стили
+*/
+
+body {
+	background: #293f50;
+	color: #888;
+	font: 300 16px/22px Roboto, "Opens Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+
+СЕТКА
+
+*/
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+.container,
+.grid {
+	width: 960px;
+	margin: 0 auto;
+}
+.container {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/* типографика */
+h1, h3, h4, h5, p {
+	margin-bottom: 22px;
+}
+h1, h2, h3, h4 {
+	color: #648880;
+}
+h1 {
+	font-size: 36px;
+	line-height: 44px;
+}
+h2 {
+	font-size: 22px;
+	line-height: 44px;
+}
+h3 {
+	font-size: 21px;
+}
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	color: #a9b2b9;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+strong {
+	font-weight: 400;
+}
+cite, em {
+	font-style: italic;
+}
+/* Вступление*/
+
+.lead {
+	text-align: center;
+}
+.lead p {
+	font-size: 21px;
+	line-height: 33px;
+}
+/* ссылки */
+
+a:hover {
+	color: #a9b2b9;
+}
+a {
+	color: #648880;
+	text-decoration: none;
+}
+p a {
+	border-bottom: 1px solid #dfe2e5;
+}
+
+.primary-header a,
+.primary-footer a {
+	color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+	color: #648880;
+}
+/* кнопки */
+
+.btn {
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: .5px;
+	display: inline-block;
+	border-radius: 5px;
+	margin: 0;
+}
+.btn-alt {
+	border: 1px solid #fff;
+	padding: 10px 30px;
+}
+.btn-alt:hover {
+	background: #fff;
+	color: #648880;
+}
+
+.btn-default {
+	border: 0;
+	background: #648880;
+	padding: 11px 30px;
+	font-size: 14px;
+}
+.btn-default:hover {
+	background: #77a198;
+}
+
+
+/* главная страница*/
+.hero {
+	color: #fff;
+	line-height: 44px;
+	padding: 22px  80px  66px 80px;
+	text-align: center;
+}
+.hero h2 {
+	font-size: 36px;
+}
+.hero p {
+	font-size: 24px;
+	font-weight: 100;
+}
+
+/* clearfix */
+.clearfix::before,
+.clearfix::after {
+	display: table;
+	content:"";
+}
+.clearfix::after {
+	clear: both;
+}
+.clearfix {
+	clear:both;
+	*zoom: 1;
+}
+
+/* полосы */
+
+.row,
+.row-alt {
+	min-width: 960px;
+}
+.row {
+	background: #fff;
+	padding: 66px 0 44px 0;
+}
+.row-alt {
+	background: #cbe2c1;
+	background: linear-gradient(to right,#a1d3b0,#f6f1d3);
+	padding: 44px 0 22px 0;
+}
+
+
+/* основной заголовок*/
+.logo {
+	border-top: 4px solid #648880;
+	padding: 40px 0 22px 0;
+	float: left;
+	font-size: 48px;
+	line-height: 44px;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+}
+
+.tagline {
+	margin: 66px 0 22px 0;
+	text-align: right;
+}
+
+.primary-nav {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+}
+
+
+/* подвал */
+.primary-footer small{
+	float: left;
+	font-weight: 400;
+}
+.primary-footer {
+	padding-bottom: 44px;
+	padding-top: 44px;
+	color: #648880;
+	font-size: 14px;
+}
+
+/* навигация */
+.nav {
+	text-align: right;
+}
+
+/* списки */
+.nav li {
+	display: inline-block;
+	margin: 0 5px;
+	vertical-align: top;
+}
+.nav li:last-child {
+	margin-right: 0;
+}
+
+/* спикеры */
+.speaker-info {
+	border: 1px solid #dfe2e5;
+	border-radius: 5px;
+	margin-top: 88px;
+	padding-bottom: 22px;
+	text-align: center;
+}
+
+.speaker {
+	margin-bottom: 44px;
+}
+
+.speaker-info img {
+	border-radius: 50%;
+	height: 130px;
+	margin: -66px 0 22px 0;
+	vertical-align: top;
+}
+
+/* Колоноки Макета*/
+.col-1-3 ,
+.col-2-3 {
+	display: inline-block;
+	vertical-align: top;
+}
+.col-1-3 {
+	width: 33.33%;
+}
+.col-2-3 {
+	width: 66.66%;
+}
+.grid,
+.col-1-3,
+.col-2-3 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.teaser a:hover h3{
+	color: #a9b2b9;
+}
+.teaser img {
+	border-radius: 5px;
+	display: block;
+	margin-bottom: 22px;
+	max-width: 100%;
+}
+
+
+/* убраль скроллбар справа */
+html {
+	overflow-y:  scroll;	
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+/* Место Проведения */
+.venue-theatre {
+	margin-bottom: 66px;
+}
+.venue-hotel {
+	margin-bottom: 22px;
+}
+
+.venue-map {
+	height: 264px;
+}
+
+/* Регистрация */
+
+.why-attend {
+	list-style: square;
+	margin: 0 0 22px 30px;
+}
+form {
+	margin-bottom: 22px;
+}
+input,
+select,
+textarea {
+	font: 300 16/22px Roboto, "Opens Sans", "Helvetica Neue", Helvecita, Arial, sans-serif;
+}
+
+.register-group {
+	color: #648880;
+	cursor: pointer;
+	font-weight: 400;
+}
+.register-group input,
+.register-group select,
+.register-group textarea {
+	border: 1px solid #c6c9cc;
+	border-radius: 5px;
+	color: #888;
+	display: block;
+	margin: 5px 0 27px 0;
+	padding: 5px 8px;
+}
+.register-group input,
+.register-group textarea {
+	width: 100%;
+}
+.register-group select {
+	height: 34px;
+	width: 60px;
+}
+.register-group textarea {
+	height: 78px;
+}
+
+
+
+/*
+	Расписание
+*/
+table {
+	width: 100%;
+	margin-bottom: 44px;
+}
+table:last-child {
+	margin-bottom: 0;
+}
+
+th, td {
+	padding-bottom: 22px;
+	vertical-align: top;
+}
+
+th {
+	padding-right: 45px;
+	text-align: right;
+	width: 20%;
+}
+td {
+	width: 40%;
+}
+thead{
+	line-height: 44px;
+}
+thead th {
+	color: #648880;
+	font-size: 24px;
+}
+
+tbody th {
+	color: #a9b2b9;
+	font-size: 14px;
+	font-weight: 400;
+	padding-top: 22px;
+	text-transform: uppercase;
+}
+
+tbody td {
+	border-top: 1px solid #dfe2e5;
+	padding-top: 21px;
+}
+tbody td:first-of-type{
+	padding-right: 15px;
+}
+tbody td:last-of-type{
+	padding-left: 15px;
+}
+tbody td:only-of-type{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+table a{
+	color: #888;
+}
+table h4 {
+	margin-bottom: 0;
+}
+.schedule-offset {
+	color: #a9b2b9;
+}
+
+
+
+
+
+/*
+
+КАСКАДИРОВАНИЕ СТИЛЕЙ СВЕРХУ ТАБЛИЦЫ СТИЛЕЙ ВНИЗ
+СБРОС СТИЛЕЙ
+общий вид:
+ div {
+	свойство1:значение1;
+	свойство2:значение2;	
+}
+
+типы селекторов:
+
+селектор типа:
+div {
+	
+}
+селектор класса:
+.info {
+	
+}
+селектор идентификатора:
+#imp {
+	
+}
+
+Каскад:
+стили читаются сверху вниз при равной специфичности
+не важно как стили задаются, в двух наборах правилах селекторов
+или в одном селекторе, используется последняя пара свойство: значение;
+
+Вычисление веса специфичности селектора:
+селектор типа:           0-0-1
+селектор класса:         0-1-0
+селектор идентификатора: 1-0-0
+
+Комбинация селекторов:
+при комбинации селекторы читаются справа налево
+в комбинированном селекторе скалдывается вес каждого типа селектора
+
+Разделение стилей по нескольким классам:
+один из вариантов модульности- разделение на разные стили 
+с помощью нескольких классов,
+то есть в атрибуте class используются несколько классов друг за другом
+разделенных пробелом:
+<div class: "btn btn-danger">...</div>
+модульность стиля требуется для того, чтобы сохранить у селекторов
+низкий вес специфичности, низкий вес специфичности селектора требуется для
+того, чтобы не ломать каскад
+
+Основные значения свойств CSS:
+
+Цвета:
+Способы представления цветов в css:
+ключевые слова, шестнадцетиричная запись,значения RGB и HSL
+
+Ключевое слово: название цвета, red, green, blue;
+span{ background: red; }
+
+Шестнадцетиричные цвета:
+шестнадцетиричный алфавит: 
+0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f -буквы только в верхнем или только нижнем регистре
+в начале значения указывается знак '#',без кавычек, 
+сокращенный код: #abc ,a-красный,b-зеленый,c-синий  span{ background: #abc; }
+полный код: #aabbcc ,aa-красный,bb-зеленый,cc-синий span{ background: #aabbcc; }
+0-черное, f-белое
+
+Цвета RGB и RGBa:
+функция rgb() принимает три значения -красный, зеленый, синий
+каждое значение это число от 0 до 255, значения разделены запятыми
+0-черное, 255-белое
+span{ background: rgb(255,255,255); }
+-------------------------------------
+функция rgba() работает аналогично, но включает альфа-канал(прозрачность)
+добавляется четвертое значение, которое является числом от 1 до 0,
+включая десятичные знаки через точку
+0-полность прозрачный,1-полностью непрозрачный, 0.5 -полупрозрачный
+span{ background: rgba(255,255,255,.5); }
+
+Цвета HSL и HSLa:
+функция hsl() принимает три значения -оттенок, насыщенность, яркость
+первое значение принимает целые числа от 0 до 360(угол цвета цветового круга)
+второе и третье значение принимают целые проценты от 0% до 100%, 
+значения разделены запятыми
+span{ background: hsl(360,25%,35%); }
+-------------------------------------
+функция hsla() работает аналогично, но включает альфа-канал(прозрачность)
+добавляется четвертое значение, которое является числом от 1 до 0,
+включая десятичные знаки через точку
+0-полность прозрачный,1-полностью непрозрачный, 0.5 -полупрозрачный
+span{ background: rgba(359,23%,32%,.25); }
+
+
+Размеры:
+
+Абсолютные размеры:
+физические единицы: дюймы, сантиметры, миллиметры
+пиксель - равен 1/96 дюйма, привязан к реальной физической единице-дюйм
+span { font-size: 14px; }
+используется для размеров шрифтов
+
+Относительные размеры:
+проценты:
+размеры элементы в процентах определяются по отношению к размеру родительского
+элемента
+div { width: 50%; }
+используется для макетов страницы
+em:
+вычисляется на основе размера шрифта элемента:
+2 em = 2 умножить на размер шрифта в пикселях;
+span {
+	font-size: 14px;
+	width: 5em;
+}
+width span = 5*14px = 70px
+если размер шрифта элемента не задан, то берется размер шрифта,
+ближайщео родительского элемента с заданным размером шрифта
+используется для задания размеров margin, padding
+
+
+свойство display
+div { display: block; }
+span { display: inline; }
+div { display: inline-block; }
+div { display: none; }
+
+каждый элемент на странице можно представить в виде прямоугольника
+
+Работа с блочной моделью:
+размера блока элемента можно задать при помощи, содерижмого элемента(линейный),
+
+если элемент блочный то, размер блока можно задать при помощи:
+div { 
+width:;
+height:;
+padding:;
+border:;
+margin:; 
+}
+
+формула ширины блочного элемента: (при аддитивной модели коробки)
+margin-left+border-left+padding-left+width+padding-right+border-right+margin-right= ширина блочного эл.
+формула высоты блочного элемента: (при аддитивной модели коробки)
+margin-top+border-top+padding-top+height+padding-bottom+border-bottom+margin-bottom= высота блочного эл.
+
+
+width:
+по умолчанию у блочных элементов ширина 100%
+по умолчанию у строчных и строчно-блочных элементов ширина равна ширине содержимого
+значение св-ва width можно задать только у блочных и строчно- блочных элементов
+
+height:
+по умолчанию у блочных и строных элементов высота равна высоте содержимого
+значение св-ва height можно задать только у блочных и строчно- блочных элементов
+
+margin:
+margin устанавливает прозрачные поля находящимися за пределами элемента вокруг элемента
+у блочных и строчно-блочных элементов свойство margin может установить прозрачные поля со всех сторон
+у строчных элементов margin устанавливате поля только слева и справа
+полная запись margin:
+margin-top: 5em; полная запись верхнее прозрачное поле
+margin-right: 5em; полная запись правое прозрачное поле
+margin-bottom: 5em; полная запись нижнее прозрачное поле
+margin-left: 5em; полная запись левое прозрачное поле
+
+сокращенная запись margin:
+margin: 5em; сокращенная запись, задается значение 5em для всех сторон элемента
+margin: 10em 15em; сокращенная запись, задается значение 10em для верхней и нижней стороны элемента,
+значение 15em задается для правой и левой стороны
+margin: 1em 2em 3em 4em; сокращенная запись, уникальное значение для каждой стороны элемента,
+1em верх, 2em право, 3em низ, 4em лево 
+
+padding:
+padding устанавливает непрозраные оступы внутри границ элемента
+цвет такой же как и у элемента
+padding можно задать у блочный и строчно-блочных элементов
+padding у строчных элементов задается но по вертикали непрозрачные отступы могут сливаться 
+со строкой
+полная запись padding:
+padding-top: 5em; полная запись верхний непрозрачный отступ
+padding-right: 5em; полная запись правое непрозрачный отступ
+padding-bottom: 5em; полная запись нижнее непрозрачный отступ
+padding-left: 5em; полная запись левое непрозрачный отступ
+
+сокращенная запись padding:
+padding: 5em; сокращенная запись, задается значение 5em для всех сторон элемента
+padding: 10em 15em; сокращенная запись, задается значение 10em для верхней и нижней стороны элемента,
+значение 15em задается для правой и левой стороны
+padding: 1em 2em 3em 4em; сокращенная запись, уникальное значение для каждой стороны элемента,
+1em верх, 2em право, 3em низ, 4em лево 
+
+
+border:
+свойство border задает границу элемента между непрозрачным отступом и прозрачным полем
+сокращенная запись border:
+border: ширина, стиль, цвет 
+border: 1em, solid, grey;
+подробная запись border:
+border-width:; принимает значения процентов, em, px
+border-style:; принимает значения solid, dashed, double, dotted, none
+border-color:; принимает шестнадцетиричные значения, ключевые слова цветов, rgb, hsl
+полная запись border:
+border-top:; принимает значения для верхней границы значения: ширина, стиль, цвет 
+border-top-width:; принимает значения для верхней границы значения процентов, em, px
+border-top-style:; принимает значения для верхней границы значения solid, dashed, double, dotted, none
+border-top-color:; принимает значения для верхней границы шестнадцетиричные значения, ключевые слова цветов, rgb, hsl
+border-right:; принимает значения для правой границы значения: ширина, стиль, цвет 
+border-right-width:; принимает значения для правой границы значения процентов, em, px
+border-right-style:; принимает значения для правой границы значения solid, dashed, double, dotted, none
+border-right-color:; принимает значения для правой границы шестнадцетиричные значения, ключевые слова цветов, rgb, hsl
+border-bottom:; принимает значения для нижней границы значения: ширина, стиль, цвет 
+border-bottom-width:; принимает значения для нижней границы значения процентов, em, px
+border-bottom-style:; принимает значения для нижней границы значения solid, dashed, double, dotted, none
+border-bottom-color:; принимает значения для нижней границы шестнадцетиричные значения, ключевые слова цветов, rgb, hsl
+border-left:; принимает значения для левой границы значения: ширина, стиль, цвет 
+border-left-width:; принимает значения для левой границы значения процентов, em, px
+border-left-style:; принимает значения для левой границы значения solid, dashed, double, dotted, none
+border-left-color:; принимает значения для левой границы шестнадцетиричные значения, ключевые слова цветов, rgb, hsl
+
+border-radius: 
+закругляет углы элемента
+принимает значения em, px, проценты
+сокращенная запись:
+border-radius: 5em; 5em радиус закругления всех четырех углов
+border-radius: 5em 4em; 5em радиус закругления левого верхнего и правого нижнего,
+правый верхний и левый нижний
+border-radius: 4em 3em 2em 1em; 4em закругляет
+полная запись:
+border-top-left-radius:;
+border-top-right-radius:;
+border-bottom-right-radius:;
+border-bottom-left-radiaus:;
+
+box-sizing:
+данное свойство позволяпет выбирать как будет работать
+блочная модель
+
+box-sizing: content-box;
+content-box значение по умолчанию, блочная модель работает как аддитивная
+к значению свойства width добавляются значения свойств padding, border, margin
+div {
+	width: 100px;
+	padding 0 10px;
+	border-left:10px solid grey;
+	border-right:10px solid grey;
+}
+with+padding+border-left+border-right = 100+10+10+10+10+= 140px
+ширина элемента будет занимать 140px
+
+box-sizing: border-box;
+border-box такая блочная модель при которой, значения свойств border и padding
+включаются в значение свойства width
+div {
+	width: 100px;
+	padding 0 10px;
+	border-left:10px solid grey;
+	border-right:10px solid grey;
+}
+with+padding+border-left+border-right = 100px
+ширина элемента будет занимать 100px
+
+
+префиксы -moz-, -webkit-, -ms-:
+эти префиксы называются вендорные префиксы
+добавляют поддержку старых браузеров
+добавляются к новым свойствам
+-moz- мозила
+-webkit- хром и сафари
+-ms- експлорер
+div {
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+базовая ширина страницы обычно 960px
+
+позиционирование через свойство float:
+свойство float позиционирует элемент слева или справа
+от родительского элемента, все остальные элементы
+обтекают такой элемент
+свойство float делает ширину элемента равной
+размеру содержимого этого элемента,
+поэтому следует задать ширину элемента
+и задать свойство margin
+
+свойство float меняет значение свойства display у
+элемента на значение block
+
+
+
+div {
+	float:left;
+}
+div {
+	float:right;
+}
+
+макет с двумя колонками при помощи float:
+<header>...</header>
+<section style="float:left;width:63%;margin:0 1.5%;">...</section>
+<aside style="float:right;width:30%;margin:0 1.5%;">...</aside>
+<footer>...</footer>
+
+макет с тремя колонками при помощи float:
+<header>...</header>
+<section style="float:left;width:30%;margin:0 1.5%;">...</section>
+<section style="float:left;width:30%;margin:0 1.5%;">...</section>
+<section style="float:left;width:30%;margin:0 1.5%;">...</section>
+<footer>...</footer>
+
+использование свойства clear и технологии clearfix:
+чтобы предотвратить содержимое страницы от обматывания вокруг
+обтекаемых элементов, нужно делать очистку свойства float
+это можно сделать при помощи свойства clear
+clear:
+принимает значения: left, right, both
+свойство clear применяется к элементу идущему после обтекаемых
+элементов
+<header>...</header>
+<section style="float:left;width:63%;margin:0 1.5%;">...</section>
+<aside style="float:right;width:30%;margin:0 1.5%;">...</aside>
+<footer style="clear:both;">...</footer>
+
+технология clearfix:
+чтобы технология сработала все обтекаемые элементы содержащие
+заданное свойство float должны находиться внутри 
+родительского элемента, выступающего в роли контейнера
+
+в таком родительском элементы должен быть задан класс .group:
+.group::before,
+.group::after {
+  content: "";
+  display: table;
+}
+.group::after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+<header>...</header>
+<div class="group">
+	<section style="float:left;width:63%;margin:0 1.5%;">...</section>
+	<aside style="float:right;width:30%;margin:0 1.5%;">...</aside>
+</div>
+<footer>...</footer>
+
+позционирование через значение inline-block:
+для размещения элементов в линию рядом друг с другом
+используется технология display:inline-block + удаление пространтсва между элементами
+inline-block трехколоночный макет:
+<header>...</header>
+<section style="display:inline-block;margin: 0 1.5%; width:30%;">...</section>
+<section style="display:inline-block;margin: 0 1.5%; width:30%;">...</section>
+<section style="display:inline-block;margin: 0 1.5%; width:30%;">...</section>
+<footer>...</footer>
+удаление пустого пространства в трехколоночном макете inline-block:
+первый метод:
+
+каждый новый открывающих тег элемента <section> расположен в той же строке,
+что и закрывающий тег элемента </section>:;
+<header>...</header>
+<section style="display:inline-block;margin: 0 1.5%; width:30%;">...
+</section><section style="display:inline-block;margin: 0 1.5%; width:30%;">...
+</section><section style="display:inline-block;margin: 0 1.5%; width:30%;">...</section>
+<footer>...</footer>
+
+второй метод:
+
+метод состоит в том что после закрывающего тега элемента </section> открывается
+комментарий <!-- который закрывается перед следующим открывающим тегом нового элемента <section>:
+<header>...</header>
+<section style="display:inline-block;margin: 0 1.5%; width:30%;">...</section><!--
+--><section style="display:inline-block;margin: 0 1.5%; width:30%;">...</section><!--
+--><section style="display:inline-block;margin: 0 1.5%; width:30%;">...</section>
+<footer>...</footer>
+
+
+многокрастно используемые макеты:
+вначале создаем классы колонок: .col-1-3 .col-1-2 .col-1-3
+потом оборачиваем в класс .grid у которого margin:0 auto;width: 960px;
+
+уточнить по поводу паддинга вложенных элементов и группировки их в стилях
+
+
+уникальное позиционирование элементов:
+свойство position в сочетании с свойствами top,right,bottom,left
+определяет как элемент будет точно позиционироваться на странице
+
+position: static;
+static  - значение по умолчанию, элемент распологается в обычном потоке документа
+
+position: relative;
+relative - элемент появляется в обычном потоке документа,исходное место элемента
+резервируется, положение элемента смещается относительно исходной позиции этого
+элемента
+размещение элемента модифицируется при помощи свойвств:
+top, right, bottom, left
+<div style="width: 100px; height: 100px;">...</div>
+<div style="width: 100px; height: 100px; position:relative; top: 20px; left: 20px;">...</div>
+<div style="width: 100px; height: 100px;">...</div>
+
+position: absolute;
+absolute - элемент не появляется в обычном потоке документа, 
+исходное место элемента не резервируется,
+положение элемента смещается относительно ближайщего относительно позиционированного
+родительского элемента, если родительского относительно позиционированного элемента нет,
+то элемент позиционируется относительно элемента body
+<section style="position: relative;">
+	<div style="position: absolute;right:20px;top:20px;">...</div>
+</section>
+
+
+Типография
+Гарнитура и шрифт
+Шрифт - это файл, содержащий гарнитуру
+Гарнитура - это то, какое оформление текста видит пользователь на странице
+
+color - цвет текста
+p {
+	color: red;
+	color: rgba( 135,135,135,.5);
+	color: #666000; (обычно используют такое значение)
+}
+
+свойства шрифта:
+font-family - содержит имена шрифтов и тип шрифта которые выводятся на страницу
+font-family: "имя шрифта", имяшрифта, тип-шрифта;
+P {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+div {
+	font-family: "New York", Times, "Times New Roman", serif;
+}
+
+font-size - устанавливает размер шрифта, в качестве значения принимает
+пиксели, em, проценты, пункты, ключевые слова
+font-size: 16px, 2em, 34%, pt, ключевое слов;
+p {
+	font-size: 16px;
+}
+
+font-style - делает текст курсивным
+font-style: normal, italic, oblique, inherit;
+p {
+	font-style: italic;
+}
+
+font-variant - текст небольшими заглавными буквами, капитель
+font-variant: normal, small-caps, inherit;
+p {
+	font-variant: small-caps;
+}
+
+font-weight - изменение насыщенности гарнитуры
+font-weight: normal, bold, bolder, lighter, inherit;
+font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+p {
+	font-weight: bold;
+}
+
+line-height - расстояние между двумя строками текстами
+line-height: 10px, 10em, 10%;
+при обычном потоке текста стоит задать значение 1.5em или 150%, 
+размер расстояния между вдумя строками должен быть в 1.5 раза больше font-size:
+div {
+	line-height: 1.5em;
+}
+при создании текста кнопок, требуется выравнять текст
+по центру строки внутри элемента, для этого требуется,
+чтобы значение line-height и height были равны:
+.btn {
+	line-height: 22px;
+	height: 22px;
+}
+
+font - универсальное свойство
+font: font-style, font-variant, font-weight, font-size/line-height, font-family
+font-size и font-family обязательны
+div {
+	font: italic small-caps 900 24px/1.5em  "Times New Roman", Times, sans-serif;
+}
+
+псевдокласс :hover
+:hover - задает стиль элемента, в тот момент когда пользователь проводит
+курсор мыши над этим элементом
+псевдокласс добавляется после селектора
+a:hover {
+	color: #333;
+}
+
+
+Текстовые свойства:
+text-align - выравнивание текста внутри элемента
+text-align: left right center justify inherit;
+p {
+	text-align: center;
+}
+
+text-decoration - украшение текста линией
+text-decoration: underline line-through overline none inherit;
+div {
+	text-decoration: underline;
+}
+
+text-indent - красная строка 
+text-indent: px, pt, %, em;
+div {
+	text-indent: 15px;
+}
+
+text-shadow - добавляет тень к тексту
+text-shadow: смещение_по_горизонтали смещение_по_вертикали радиус_размытия цвет;
+div {
+	text-shadow: 3px 6px 2px rgba(0, 0, 0, .3);
+}
+
+box-shadow - добавляет тень к элементу
+box-shadow:;
+div {
+	box-shadow:;
+}
+
+text-transform - изменяет внешний вид строки текста,
+не используя альтернативных гарнитур
+text-transform: none capitalize uppercase lowercase inherit
+div {
+	text-transform: uppercase;
+}
+
+letter-spacing - расстояние между буквами
+letter-spacing: px em % pt;
+p {
+	letter-spacing: -.5em;
+}
+
+word-spacing - расстояние между словами
+word-spacing: px em % pt;
+div {
+	word-spacing: .25em;
+}
+
+если текст обтекает элемент, то стоит задать значение элемента text-align
+
+
+Стилевое правило @font-face - загружает и включает на сайте шрифты
+чтобы использовать локальные шрифты:
+вначале через тег <style> в теге <head> нужно на странице задать правило:
+<head>
+	<style type="text/css">
+		@font-face {
+		font-family: имя_шрифта;
+		src: url("путь_до_шрифта") format("расширение_файла_шрифта");
+		}
+	</style>
+</head>
+потом в правиле css можно уже использовать название шрифта
+лучше использовать расширение woff
+
+также можно добавлять новые шрифты через fonts.google
+
+Утановка фона и градиента:
+добавление цвета фона:
+background-color - принимает значение только цвета
+background - универсальное сокращенное свойство, принимает значение цвета, принимает значение изображения
+background:aqua #fff #fff000 rgb(255,255,255) rgba(255,255,255, .5) hsl(359,100%,100%) hsla(359,100%,100%,.5);
+background-color: aqua #fff #fff000 rgb(255,255,255) rgba(255,255,255, .5) hsl(359,100%,100%) hsla(359,100%,100%,.5);
+div {
+	background: #b2b2b2;
+}
+div {
+	background-color: #b2b2b2;
+}
+
+rgba() и hsla() не работает в старых браузерах,
+чтобы избежать неотображения значения rgba() и hsla()
+нужно также прописать запасные варианты фона:
+div{
+	background-color: #b2b2b2; // безопасный цвет
+	background-color: rgba(0,0,0,.3); //прозрачный цвет
+}
+
+Добавление фонового изображения:
+background-image - добавляет фоновое изображение к элементу
+background - универсальное сокращенное свойство, можно указать фоновое изображение
+background: url("путь/к/изображению");
+background-image: url("путь/к/изображению");
+div {
+	background: url("alert.png");
+}
+div {
+	background-image: url("alert.jpeg");
+}
+
+Управление фоновым изображением элемента:
+background-repeat - изменяет направление в котором фоновая картинка элемента повторяется
+background - универсальное сокращенное свойство, можно менять направление повтора фоновой картинки элемента
+background: repeat repeat-x repeat-y no-repeat;
+background-repeat: repeat repeat-x repeat-y no-repeat;
+div {
+	background-image: url("alert.jpeg");
+	background: no-repeat;
+}
+div {
+	background-image: url("alert.jpeg");
+	background-repeat: no-repeat;
+}
+
+background-postion - задает положение фонового изображения относительно левого верхнего угла\
+левый верхний угол (0,0) (left top)
+background - универсальное сокращенное свойство, можно задать положение фона
+background:;
+background-position: горизонтальное_смещение(left или right)(px,pt,%,em) вертикальное_смещение(top или bottom)(px,pt,%,em);
+можно задать только одно значение, тогда второе значение будет равно 50%
+div {
+	background-image: url("alert.jpeg");
+	background-repeat: no-repeat;
+	background: center center;
+}
+div {
+	background-image: url("alert.jpeg");
+	background-repean: no-repeat;
+	background-position: 50% 50%;
+}
+
+background - универсальное сокращенное свойство, можно указать несколько свойств:
+background: background-color background-image background-position background-repeat;
+div {
+	background: #b2b2b2 url("image.jpeg") bottom center no-repeat;
+}
+
+
+Курсор
+cursor - задает вид курсора при наведегии
+cursor: pointer;
+.btn {
+	cursor: pointer;
+}
+
+
+если требуется создать элемент который будет
+min-width
+min-width: px % em pt;
+.row {
+	min-width: 960px;
+}
+
+
+
+Дизайн градиентного фона
+градиенты рассматриваются в css как фоны
+градинеты создаются при помощи свойств background и background-image:
+
+Линейный градиент:
+background: linear-gradient(начальный_цвет, конечный_цвет);
+background-image: linear-gradient(начальный_цвет, конечный_цвет);
+div {
+	background-image: linear-gradient(#644888, #fff000);
+}
+если требуется безопасный цвет:
+div {
+	background: #333; //безопасный цвет для старых браузеров
+	background: linear-gradient(#333, rgba(133,133,133,.2));
+}
+
+Смена направление градиента:
+по умолчанию градиент движется сверху вниз
+с помощью ключевых слов(to right bottom) или значения угла(145deg) можно изменить направление градиента
+для этого надо задать значение третье значение перед начальным цветом
+background-image: linear-gradient(to направление_градинета,начальный_цвет,конечный_цвет);
+div {
+	background: #333;
+	background: linear-gradient(90deg,#333,rgba(255,111,111,.45));
+}
+
+Радиальный градиент:
+background: radial-gradient(начальный_цвет, конечный_цвет);
+background-image: radial-gradient(начальный_цвет, конечный_цвет);
+в радиально градиенте, значение начального цвета, задает цвет в центре элемента,
+значение конечного цвета задает цвет внешней стороны элемента
+div {
+	background: #333;
+	background: radial-gradient(#333, rgba(111,255,111,.5));
+}
+
+Стоп цвета:
+к любому градиенту можно добавить дополнительные цвета, через которые
+градиент будет делать переход, 
+по умолчанию каждый цвет находиться на равном расстоянии в градиенте,
+но можно задать расстояние перехода для каждого цвета (px,%,pt,em):
+div {
+	background: #333;
+	background: linear-gradient(to bottom,#111 10%,#222 25%,#333 65%);
+}
+
+использование нескольких фоновых изображений:
+в качестве фона можно использовать несколько изображение указывая их через запятую
+в сокращенное или полной записи:
+сокращенная запись:
+div {
+	background: url("foreground.png") 0 0 no-repeat,url(background.png) 0 0 no-repeat;
+}
+польная запись:
+div {
+	background-image: url("foreground.png"), url("background.png");
+	background-position: 0 0, 0 0;
+	background-repeat: no-repeat, no-repeat;
+}
+
+background-size - позволяет изменить размер фонового изображения
+принимает величины: ключевые слова, пиксели, поинты, проценты, эмы:
+
+ключевые слова: 
+cover - исходное соотношение высоты и ширины изображения будут сохранены,
+изображение при этом должно полностью Покрыть элемент,
+Картинка должна покрывать всю площадь элемента
+contain - исходное соотношение высоты и ширины изображения сохраняются,
+уменьшенная картинка при этом должна полностью быть видна внутри элемента,
+остальное пространство в элементе по умолчанию должно замоститься картинками
+
+в качестве значение принимаются два значения: шириниа и высота
+background-size: 250px 50px; //250px-ширина 50px-высота
+
+
+
+background-clip - позволяет контролировать как фоновое изображение обрезается
+background-clip: content-box//border-box;
+div {
+	background-image: url("background.jpg");
+	background-clip: border-box;
+}
+
+background-origin - позволяет контролировать где фоновое изображение распологается в элементе
+background-origin: content-box//border-box;
+div {
+	background-image: url("background.jpg");
+	backgrnoud-origin: border-box;
+}
+
+
+Стилизация пунктов списка:
+list-style-type - устанавливает содержимого маркера пунктов списка
+свойство применяется к элементам: ol, ul, li
+
+значения list-style-type: none, disc, circle, square, decimal, decimal-leading-zero, lower-roman,
+upper-roman, lower-greek, lower-alpha, lower-latin, upper-alpha, upper-latin, armenian, geogrian
+
+ul {
+	list-style-type: square;
+}
+
+Использование изображений в качестве маркера списка:
+1. удаление маркера элемента li
+li {
+	list-style-type:none; //удаление маркера
+}
+2. добавление слева поля для изображения
+li {
+	list-style-type:none;
+	padding-left: 12px; //добавление поля слева
+}
+3. добавление изображения, с указанными значениями: 0 50% no-repeat;
+li {
+	list-style-type: none;
+	padding-left: 12px;
+	background: url("little_picture.jpg") 0 50% no-repeat; // добавление изображения с значениями
+}
+
+list-style-position - стиль позиционирования маркера элемента li
+list-style-position: outside inside inherit;
+outside - содержимое элемента li позиционируется справа за пределеами маркера списка
+inside - позволяет содержимому элемента li обтекать маркер
+li {
+	list-style-position: inside;
+}
+
+универсальное свойство list-style
+list-style - включает все значения свойств начинающихся на list-style
+list-style: значения list-style-type и значения свойства list-style-position;
+
+ol {
+	list-style: lower-roman outside;
+}
+ul {
+	list-style: square inside;
+}
+
+Горизонтальное отображение списков:
+Отобржение списка горизонтально через display: inline-block;
+при значении display:inline-block список с элементами li отображается горизонтально
+при значении display:inline-block значение свойства list-style-type становится none;
+<ul>
+	<li style="display:inline-block;">first</li>
+	<li style="display:inline-block;">second</li>
+</ul>
+
+Отображение списка горизонтально через float:
+свойство float:left; не удаляет маркеры списков, но выводит
+элементы списка горизонтально, при использовании метода через float
+требуется использовать метод clearfix
+li {
+	float: left;
+}
+
+
+
+
+
+border-collapse - определяет модель границы в таблице
+border-collapse: collapse, separate, inherit;
+collapse - ширина всех границ элементов таблицы складывается
+table {
+	border-collpse:;
+}
+
+border-spacing - задает какое расстояние отображается между границами 
+элементов таблицы
+border-spacing: px em;
+первое значение для горизонтального расстояния,
+второе значение для вертикального расстояния
+
+добавление границ к строкам
+
+чередование в таблице
+способ заключается в использовании псевдокласса :nth-child с параметром even или odd
+tr:nth-child(even) {
+	background: grey;
+}
+
+выравнивание текста
+text-align - свойство которое выравнивает текст по горизонтали
+text-align: left middle right;
+vertical-align - свойство которое выравнивает текст по вертикали,
+работает только с строчными элементами и ячейками таблицы, не работает с блочными и блочно-строчными
+vertical-align: top middle center;
+
+
+*/

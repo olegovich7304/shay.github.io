@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Конференция стилей</title>
+	<link rel="stylesheet" type="text/css" href="../styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="primary-header container clearfix">
+		<h1 class="logo">
+			<a href="../index.html">Конференция<br>стилей</a>
+		</h1>
+		<h3 class="tagline">30&ndash;31 августа &mdash; Чикаго, штат Иллинойс</h3>
+		<nav class="nav primary-nav">
+			<ul>
+				<li><a href="../index.html">Главная</a></li><!--
+			 --><li><a href="speakers.html">Спикеры</a></li><!--
+			 --><li><a href="schedule.html">Расписание</a></li><!--
+			 --><li><a href="venue.html">Место проведения</a></li><!--
+			 --><li><a href="register.html">Регистрация</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="row-alt">
+		<div class="lead container">	
+			<h1>Регистрация</h1>
+			<p>Каждый год мы стремимся невероятно провести время и в этом году мы хотели бы чтобы вы присоединились к нам. Вход на конференцию стоит всего лишь 99$ и это одна из лучших ценностей, которую вы найдёте.</p>
+		</div>
+	</section>
+
+	<section class="row">
+		<div class="grid">
+			<section class="col-2-3">
+				<h2>Закажи билет на конференцию</h2>
+				<h5>$99 за билет</h5>
+				<p>Приобретите билет на Styles Conference, используя форму справа. 
+    			Можно приобрести сразу несколько билетов, так что не стесняйтесь взять 
+    			с собой друга или двух. После того, как ваш заказ будет готов, мы 
+    			свяжемся с вами и предоставим квитанцию за покупку. Скоро увидимся!</p>
+				<h4>Зачем участвовать?</h4>
+				<ul class="why-attend">
+					<li>Более двадцати спикеров мирового класса</li>
+					<li>Один полный день мастер-классов и два полных дня презентаций</li>
+					<li>Состоится в Театре Чикаго, исторической достопримечательности</li>
+					<li>Август в Чикаго просто поражает</li>
+				</ul>
+			</section><!--
+		 --><form class="col-1-3" action="#" method="post">
+				<fieldset class="register-group">
+					<label>
+						Имя:
+						<input type="text" name="username" placeholder="полное имя" required>
+					</label>
+					<label>
+						Почта:
+						<input type="email" name="pochta" placeholder="Электронная почта" required>
+					</label>
+					<label>
+						Число билетов:
+						<select name="quantity" required>
+							<option value="1" selected>1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</label>
+					<label>
+						Комментарий:
+						<textarea name="comments" placeholder="Прокоментируйте..."></textarea>
+					</label>
+				</fieldset>
+
+				<input type="submit" name="submit" value="Заказать" class="btn btn-default">
+			</form>
+		</div>
+	</section>
+
+
+
+
+
+	<footer class="primary-footer container clearfix">
+		<small>&copy; Конференция стилей</small>
+		<nav class="nav">
+			<ul>
+				<li><a href="../index.html">Главная</a></li><!--
+			 --><li><a href="speakers.html">Спикеры</a></li><!--
+			 --><li><a href="schedule.html">Расписание</a></li><!--
+			 --><li><a href="venue.html">Место проведения</a></li><!--
+			 --><li><a href="register.html">Регистрация</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</html>
+
+
+
+<!--
+
+
+семантический смысл элементов страниц основан на смысловом содержании элементов:
+
+<div>  - блочный контейнер, занимают всю доступную ширину страницы, начинаются с новой строки
+<span> - строчный контейнер, ширина основа на содержимом, не начинаются с новой строки
+
+синтаксис тега:
+<открывающий тег атрибут_1="значение" атрибут_2="значение">содержимое...</закрывающий тег>
+
+обязательно указывать в начале - <html lang="ru">
+
+текстовые элементы:
+
+заголовки:
+<h1></h1> -блочный, заголовок
+...
+<h6></h6>
+абзац:
+<p></p> -блочный, абзац
+жирный текст:
+<b></b> -строчный, стилистическое выделение
+<strong></strong> -строчный, важное значение
+курсивные текст:
+<em></em> -строчный, акцент на слове
+<i></i> -строчный, другой тон на слове
+
+структурные элементы:
+<header></header> -блочный, начало страницы, заголовок
+<nav></nav> -блочный, навигация
+<article></article> -блочный, заметка
+<section></section> -блочный, тематическая группа содержимого иногда содержит заголовки
+<aside></aside> -блочный, боковая панель
+<footer></footer> -блочный, конец страницы
+
+специальные символы:
+&код;
+
+гиперссылки:
+<a href=""></a> -строчный, исключение может оборазчивать блочные тэги в html5, ссылка
+
+
+<a></a> - открывающий и закрывающий тег
+
+атрибуты ссылок:
+src - источник встраиваемого элемента
+href - ссылка на связанный ресурс
+
+относительные и абсолютные пути:
+относительный путь- сокращенная запись, содержит только имя страницы, href="имя.html", ссылки на внтуренние страницы сайта
+абсолютный путь - полная запись, содержит полное имя: протокол:http:// и домен: ru,  
+href="http://название.ru", ссылки на внешние сайты
+
+ссылка на электронную почту:
+href="mailto:megamanfx@gmail.com"
+чтобы добавить тему письма:
+нужно добавить ?subject=тема
+href="mailto:megamanfx@gmail.com?subject=тема"
+чтобы добавить еще текст письма:
+нужно добавить &body=текст
+href="mailto:megamanfx@gmail.com?subject=тема&body=текст"
+пробел - %20 
+перенос строки - %0A
+
+открытие страницы в новом окне:
+<a href="" target="_blank">...</a>
+
+связывание частей одной страницы:
+<div id="top"></div>
+<a href="#top">на верх</a>
+
+
+-->
